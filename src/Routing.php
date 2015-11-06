@@ -16,3 +16,5 @@ $app->post('/users', '\RDuuke\Mdn\Controllers\UsersController:store');
 $app->get('/users/{id}', '\RDuuke\Mdn\Controllers\UsersController:show');
 $app->put('/users/{id}', '\RDuuke\Mdn\Controllers\UsersController:update');
 $app->delete('/users/{id}', '\RDuuke\Mdn\Controllers\UsersController:destroy');
+
+$app->run();

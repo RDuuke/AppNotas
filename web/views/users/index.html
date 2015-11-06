@@ -4,33 +4,34 @@
 </div>
 
 
-</div>
+<div class="container">
 
-<div class="row">
-    <table class="striped">
-        <thead>
-            <tr>
-                <td>id</td>
-                <td>correo</td>
-                <td>nombre</td>
-                <td>edad</td>
-                <td>operaciones</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr ng-repeat="User in Users | filter:search">
-                <td>{{User.id}}</td>
-                <td>{{User.correo}}</td>
-                <td>{{User.nombre}}</td>
-                <td>{{User.edad}}</td>
-                <td><a href="#users/edit/{{User.id}}"><i class="material-icons">edit</i></a> - <a href="#" ng-click="removeUser(User.id)"><i class="material-icons">delete</i></a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="row">
+        <table class="striped">
+            <thead>
+                <tr>
+                    <td>id</td>
+                    <td>correo</td>
+                    <td>nombre</td>
+                    <td>edad</td>
+                    <td>operaciones</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="User in Users | filter:search">
+                    <td>{{User.id}}</td>
+                    <td>{{User.correo}}</td>
+                    <td>{{User.nombre}}</td>
+                    <td>{{User.edad}}</td>
+                    <td><a href="#users/edit/{{User.id}}"><i class="material-icons">edit</i></a> - <a href="#" ng-click="removeUser(User.id)"><i class="material-icons">delete</i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
     <a href="#/users/new" class="btn-floating btn-large waves-effect waves-light red">
         <i class="large material-icons">add</i>
     </a>
-</div
+</div>
