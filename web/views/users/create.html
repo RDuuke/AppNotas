@@ -1,0 +1,15 @@
+<div class="card-panel contenedor z-depth-3">
+    {{title}}
+    <form ng-submit="saveUser()">
+        <div class="input-field">
+            <input type="text" ng-model="User.correo" placeholder="Correo">
+        </div>
+        <div class="input-field">
+            <input type="text" ng-model="User.nombre" placeholder="Nombre">
+        </div>
+        <div class="input-field">
+            <input type="text" ng-model="User.edad" placeholder="Edad">
+        </div>
+        <button class="btn waves-effect blue darken-3" type="submit">{{button}}</button>
+    </form>
+</div>

@@ -1,0 +1,22 @@
+{
+    "name": "rduuke/manejador-de-notas",
+    "description": "Calcula notas actuales y cuando deberia sacar en un futuro.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juan Duque",
+            "email": "juuanduuke@gmail.com"
+        }
+    ],
+    "autoload":{
+      "psr-4":{
+        "RDuuke\\Mdn\\": "src/"
+      }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "slim/slim": "3.x-dev"
+    }
+}
